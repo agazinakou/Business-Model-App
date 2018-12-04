@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Business Model Canvas App</title>
+	<meta name="csrf-token" content="{{ csrf_token() }}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--IONICONS-->
+    <link href="css/ionicons.min.css" rel="stylesheet">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- MANIFIC POPUPS-->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- OWL CAROUSEL-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!--SWIPER CAROUSEL-->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- MAIN STYLES-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- RESPONSIVE -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href=""><!-- 16x16 size favicon -->
+    <meta name="description" content="Business Model Canvas Creator">
+    <meta name="author" content="Lamine AZINAKOU">
+    <link href='http://fonts.googleapis.com/css?family=Headland+One' rel='stylesheet' type='text/css'>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.29.2/dist/sweetalert2.all.min.js" integrity="sha256-e4Wd1TBf+OAA5INF7vCXGpnGqiXYg7WVvkXviW2XQKY=" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="x-hidden has-sticky-header">
+
+    <div id="loading" class="hidden">
+        <div class="ripple ripple1"></div>
+        <div class="ripple ripple2"></div>
+        <div class="ripple ripple3"></div>
+        <div class="ripple ripple4"></div>
+    </div>
+    <!--END PRELOADER-->
+    <nav class="navbar navbar-expand-lg fixed-top custom-menu custom-menu__light">
+        <div class="container">
+            <a class="navbar-brand" href="">
+                <img src="img/logo.png" alt="Image" class="logo-md" style="width: 50px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="menu-icon__circle">
+                </span>
+                <span class="menu-icon">
+                    <span class="menu-icon__bar"></span>
+                    <span class="menu-icon__bar"></span>
+                    <span class="menu-icon__bar"></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">Accueil
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="comingSoon()">En savoir plus</a>
+                    </li>
+                </ul>
+                <div class="custom-menu__right">
+                    <button class="btn btn-warning btn-pills" onclick="comingSoon()">Se connecter pour enregistrer</button>
+                    <button class="btn btn-primary btn-pills" id="print">Imprimer <i class="fas fa-print"></i></button>
+                    <p class="assistive-text d-md-none">Free forever</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <section>
+        <br>
+        {% block content %}{% endblock %}
+    </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,35 +1,66 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<meta name="csrf-token" content="{{ csrf_token() }}"/>
-	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400" type="text/css"/>
-	<link rel="icon" type="image/x-icon" href="/favicon.png"/>
-	<link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
-	<title>It's Worked</title>
-	<style type="text/css">
-		div#main {
-		  position: relative;
-		  margin: 10% auto;
-		  font-size: 15px;
-		  width: 550px;
-		  text-align: center;
-		  font-family: "Lato", "console", monospace, serif, "sans-serif";
-		}
+{% extends "layouts/master.twig" %}
 
-		a {
-		  color: #bd362f;
-		  text-decoration: none;
-		}
-	</style>
-</head>
-<body>
-<div id="main">
-	<!-- <Example></Example> -->
-	<div>
-		I'm a bow application, you can see the <a href="https://bowphp.github.io">documentation</a>.
-	</div>
-</div>
-<script type="text/javascript" src="/js/app.js"></script>
-</body>
-</html>
+
+{% block content %}
+    <div class="container">
+      <h3>The Business Model Canvas</h3>
+      <!-- Canvas -->
+      <table id="bizcanvas" cellspacing="0" border="1">
+        <!-- Upper part -->
+        <tr>
+          <td colspan="2" rowspan="2">
+            <h4>Key Partners</h4>
+            <p id="keyPartnersArr"><p>
+            <p><button type="button" class="btn btn-primary btn-sm" id="keyPartners">Ajouter <i class="fas fa-plus-circle"></i></button></p>
+          </td>
+          <td colspan="2">
+            <h4>Key Activities</h4>
+						<p id="keyActivitiesArr"><p>
+            <p><button type="button" class="btn btn-primary btn-sm" id="keyActivities">Ajouter <i class="fas fa-plus-circle"></i></button></p>
+          </td>
+          <td colspan="2" rowspan="2">
+            <h4>Value Proposition</h4>
+            <p id="valuePropositionArr"><p>
+            <p><button type="button" class="btn btn-primary btn-sm" id="valueProposition">Ajouter <i class="fas fa-plus-circle"></i></button></p>
+          </td>
+          <td colspan="2">
+            <h4>Customer Relationship</h4>
+            <p id="customerRelationshipArr"><p>
+            <p><button type="button" class="btn btn-primary btn-sm" id="customerRelationship">Ajouter <i class="fas fa-plus-circle"></i></button></p>
+          </td>
+          <td colspan="2" rowspan="2">
+            <h4>Customer Segments</h4>
+            <p id="customerSegmentsArr"><p>
+            <p><button type="button" class="btn btn-primary btn-sm" id="customerSegments">Ajouter <i class="fas fa-plus-circle"></i></button></p>
+          </td>
+        </tr>
+
+        <!-- Lower part -->
+        <tr>
+          <td colspan="2">
+            <h4>Key Resources</h4>
+            <p id="keyResourcesArr"><p>
+            <p><button type="button" class="btn btn-primary btn-sm" id="keyResources">Ajouter <i class="fas fa-plus-circle"></i></button></p>
+          </td>
+          <td colspan="2">
+            <h4>Channels</h4>
+            <p id="channelsArr"><p>
+            <p><button type="button" class="btn btn-primary btn-sm" id="channels">Ajouter <i class="fas fa-plus-circle"></i></button></p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="5">
+            <h4>Cost Structure</h4>
+            <p id="costStructureArr"><p>
+            <p><button type="button" class="btn btn-primary btn-sm" id="costStructure">Ajouter <i class="fas fa-plus-circle"></i></button></p>
+          </td>
+          <td colspan="5">
+            <h4>Revenue Streams</h4>
+            <p id="revenueStreamsArr"><p>
+            <p><button type="button" class="btn btn-primary btn-sm" id="revenueStreams">Ajouter <i class="fas fa-plus-circle"></i></button></p>
+          </td>
+        </tr>
+      </table>
+      <!-- /Canvas -->
+    </div>
+{% endblock %}
