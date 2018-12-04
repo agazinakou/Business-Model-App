@@ -1,22 +1,24 @@
-<img src="https://raw.githubusercontent.com/bowphp/arts/master/bow.jpg" width="100">
+<img src="public/img/logo.png" height="100" />
 
-## Bow Framework
+## Business Model Canvas App
 
-<a href="https://bowphp.github.io" title="docs"><img src="https://img.shields.io/badge/docs-read%20docs-blue.svg?style=flat-square"/></a>
-<a href="https://packagist.org/packages/bowphp/app" title="version"><img src="https://img.shields.io/packagist/v/bowphp/app.svg?style=flat-square"/></a>
-<a href="https://github.com/bowphp/app/blob/master/LICENSE" title="license"><img src="https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square"/></a>
-<a href="https://travis-ci.org/bowphp/app" title="Travis branch"><img src="https://img.shields.io/travis/bowphp/app/master.svg?style=flat-square"/></a>
+## Why ?
 
-Bow est un Framework PHP, écrit par **[Franck DAKIA](http://github.com/papac)** et plusieurs autre contributeurs.
+It's cool and fun.
 
-Le but c'est de permettre aux débutants qui veulent travailler sur un projet un peu plus grand de s'y lancer, afin de comprendre les rouages du **développement collaboratif**. Et faire de ce framework une référence dans la communauté PHP dans le monde.
 
-**N'hésitez pas à commencez maintenant avec la [documentation](https://bowphp.github.io).**
+## Features
+1. Add/Edit/Remove element
+2. Drag & Drop
+3. Print easily
+4. Login for save
+5. ...
 
-## Prérequis
+## Requirement
 
-Vous devez vous assurer les différents éléments suivants sont installés sur votre machine.
+You must be sure to have the following elements installed on your machine.
 
+- [Bow Framework](https://bowphp.github.io) by [@franck_dakia](https://twitter.com/franck_dakia)
 - PHP >= 7
 - OpenSSL PHP Extension
 - PDO PHP Extension
@@ -24,10 +26,37 @@ Vous devez vous assurer les différents éléments suivants sont installés sur 
 - XML PHP Extension
 - JSON PHP Extension
 
-## Auteur
+<img src="public/img/logo.png" height="100" />
 
-**Franck DAKIA** est un développeur Full Stack basé actuellement en Afrique, Côte d'ivoire. Passioné de code, et développement collaboratif, Speaker, Formateur et Membre de plusieurs communautés de développeurs.
+## Business Model Canvas App
 
-Contact: [dakiafranck@gmail.com](mailto:dakiafranck@gmail.com) - [@franck_dakia](https://twitter.com/franck_dakia)
+## Why ?
 
-**SVP s'il y a un bogue sur le projet veuillez me contacter par email ou laissez moi un message sur le [slack](https://bowphp.slack.com).**
+It's cool and fun.
+
+
+## Features
+1. Add/Edit/Remove element
+2. Drag & Drop
+3. Print easily
+4. Login for save
+5. ...
+
+## Requirement
+
+You must be sure to have the following elements installed on your machine.
+
+- [Bow Framework](https://bowphp.github.io) by [@franck_dakia](https://twitter.com/franck_dakia)
+- PHP >= 7
+- OpenSSL PHP Extension
+- PDO PHP Extension
+- Mbstring PHP Extension
+- XML PHP Extension
+- JSON PHP Extension
+
+
+## Contact me 
+
+If you need technical support or have any questions, please send a message to [agazinakou@gmail.com](mailto:agazinakou@gmail.com) or via skype: aziiin5.
+
+**Don't re-invent the wheel, Just re-align It.**
