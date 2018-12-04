@@ -80,16 +80,19 @@ $(window).on('load', function() {
         return !value && 'You need to write something!'
       }
     }).then((result) => {
+      if(result.value){
       keyActivitiesArr.push(result.value);
       var html = "<div class='notes'>";
       for (var i = 0; i < keyActivitiesArr.length; i++) {
-        html += "<div class='post-it-note'>";
+          html += "<div class='post-it-note' ondblclick=keyActivities('" + keyActivitiesArr[i] + "')>";
           html += "<p>" + keyActivitiesArr[i] + "</p>";
-        html += '</div>';
+          html += '</div>';
 
       }
       html += '</div>';
       document.getElementById('keyActivitiesArr').innerHTML = html;
+      dragula($('.notes').toArray());
+      }
     })
   });
 
@@ -109,17 +112,20 @@ $(window).on('load', function() {
         return !value && 'You need to write something!'
       }
     }).then((result) => {
-      keyPartnersArr.push(result.value);
-      var html = "<div class='notes'>";
-      for (var i = 0; i < keyPartnersArr.length; i++) {
-        html += "<div class='post-it-note'>";
-        html += "<p>" + keyPartnersArr[i] + "</p>";
-        html += '</div>';
+      if (result.value){
+        keyPartnersArr.push(result.value);
+        var html = "<div class='notes'>";
+        for (var i = 0; i < keyPartnersArr.length; i++) {
+          html += "<div class='post-it-note'>";
+          html += "<p>" + keyPartnersArr[i] + "</p>";
+          html += '</div>';
 
+        }
+        html += '</div>';
+        document.getElementById('keyPartnersArr').innerHTML = html;
+        dragula($('.notes').toArray());
       }
-      html += '</div>';
-      document.getElementById('keyPartnersArr').innerHTML = html;
-    })
+      })
   });  
 
   $("#keyResources").click(function () {
@@ -138,6 +144,7 @@ $(window).on('load', function() {
               return !value && 'You need to write something!'
           }
       }).then((result) => {
+          if (result.value) {
           keyResourcesArr.push(result.value);
           var html = "<div class='notes'>";
           for (var i = 0; i < keyResourcesArr.length; i++) {
@@ -148,6 +155,8 @@ $(window).on('load', function() {
           }
           html += '</div>';
           document.getElementById('keyResourcesArr').innerHTML = html;
+          dragula($('.notes').toArray());
+        }
       })
   });
 
@@ -167,6 +176,7 @@ $(window).on('load', function() {
         return !value && 'You need to write something!'
       }
     }).then((result) => {
+      if (result.value) {
       valuePropositionArr.push(result.value);
       var html = "<div class='notes'>";
       for (var i = 0; i < valuePropositionArr.length; i++) {
@@ -177,6 +187,8 @@ $(window).on('load', function() {
       }
       html += '</div>';
       document.getElementById('valuePropositionArr').innerHTML = html;
+      dragula($('.notes').toArray());
+    }
     })
   });
 
@@ -196,6 +208,7 @@ $(window).on('load', function() {
         return !value && 'You need to write something!'
       }
     }).then((result) => {
+      if (result.value) {
       customerRelationshipArr.push(result.value);
       var html = "<div class='notes'>";
       for (var i = 0; i < customerRelationshipArr.length; i++) {
@@ -206,6 +219,8 @@ $(window).on('load', function() {
       }
       html += '</div>';
       document.getElementById('customerRelationshipArr').innerHTML = html;
+      dragula($('.notes').toArray());
+    }
     })
   });
 
@@ -225,6 +240,7 @@ $(window).on('load', function() {
         return !value && 'You need to write something!'
       }
     }).then((result) => {
+      if (result.value) {
       customerSegmentsArr.push(result.value);
       var html = "<div class='notes'>";
       for (var i = 0; i < customerSegmentsArr.length; i++) {
@@ -235,6 +251,8 @@ $(window).on('load', function() {
       }
       html += '</div>';
       document.getElementById('customerSegmentsArr').innerHTML = html;
+      dragula($('.notes').toArray());
+    }
     })
   });
 
@@ -254,6 +272,7 @@ $(window).on('load', function() {
               return !value && 'You need to write something!'
           }
       }).then((result) => {
+          if (result.value) {
           channelsArr.push(result.value);
           var html = "<div class='notes'>";
           for (var i = 0; i < channelsArr.length; i++) {
@@ -264,6 +283,8 @@ $(window).on('load', function() {
           }
           html += '</div>';
           document.getElementById('channelsArr').innerHTML = html;
+          dragula($('.notes').toArray());
+        }
       })
   });
 
@@ -283,6 +304,7 @@ $(window).on('load', function() {
               return !value && 'You need to write something!'
           }
       }).then((result) => {
+          if (result.value) {
           costStructureArr.push(result.value);
           var html = "<div class='notes'>";
           for (var i = 0; i < costStructureArr.length; i++) {
@@ -293,6 +315,8 @@ $(window).on('load', function() {
           }
           html += '</div>';
           document.getElementById('costStructureArr').innerHTML = html;
+          dragula($('.notes').toArray());
+        }
       })
   });
 
@@ -312,6 +336,7 @@ $(window).on('load', function() {
         return !value && 'You need to write something!'
       }
     }).then((result) => {
+      if (result.value) {
       revenueStreamsArr.push(result.value);
       var html = "<div class='notes'>";
       for (var i = 0; i < revenueStreamsArr.length; i++) {
@@ -322,6 +347,8 @@ $(window).on('load', function() {
       }
       html += '</div>';
       document.getElementById('revenueStreamsArr').innerHTML = html;
+      dragula($('.notes').toArray());
+    }
     })
   });
 
@@ -340,3 +367,26 @@ function comingSoon() {
     confirmButtonText: 'OK',
   })
 }
+
+function keyActivities(a){
+  swal({
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
+      type: 'warning',
+      showCancelButton: true,
+      confirmButtonText: 'Yes, delete it!',
+      cancelButtonText: 'No, cancel!',
+      reverseButtons: true
+  }).then((result) => {
+      if (result.value) {
+          swal(
+              'Deleted!',
+              'Your file has been deleted.',
+              'success'
+          )
+      }
+  })
+
+}
+
+

@@ -15,7 +15,8 @@ It's cool and fun.
 2. Drag & Drop
 3. Print easily
 4. Login for save
-5. ...
+5. Tooltip
+6. ...
 
 ## Requirement
 
