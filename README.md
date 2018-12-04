@@ -2,8 +2,7 @@
 
 ## Business Model Canvas App
 
-<img src="public/img/1.png" height="300" />
-<img src="public/img/2.png" height="300" />
+<img src="public/img/2.png" height="700" />
 
 
 ## Why ?
