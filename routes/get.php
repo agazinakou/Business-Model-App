@@ -9,6 +9,24 @@ $app->route([
 	}
 ]);
 
+$app->route([
+	'path' => '/signin',
+	'method' => 'GET',
+	'handler' => function () {
+		//return response()->render('welcome');
+		return view('auth.signin');
+	}
+]);
+
+$app->route([
+	'path' => '/signup',
+	'method' => 'GET',
+	'handler' => function () {
+		//return response()->render('welcome');
+		return view('auth.signup');
+	}
+]);
+
 
 $app->route([
 	'path' => '/hello/:name',

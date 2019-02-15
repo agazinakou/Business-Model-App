@@ -75,7 +75,7 @@ $(window).on('load', function() {
       },
       showCancelButton: true,
       confirmButtonColor: '#00ebad',
-      confirmButtonText: 'Ajouter',
+      confirmButtonText: 'Add',
       inputValidator: (value) => {
         return !value && 'You need to write something!'
       }
@@ -107,7 +107,7 @@ $(window).on('load', function() {
       },
       showCancelButton: true,
       confirmButtonColor: '#00ebad',
-      confirmButtonText: 'Ajouter',
+      confirmButtonText: 'Add',
       inputValidator: (value) => {
         return !value && 'You need to write something!'
       }
@@ -139,7 +139,7 @@ $(window).on('load', function() {
           },
           showCancelButton: true,
           confirmButtonColor: '#00ebad',
-          confirmButtonText: 'Ajouter',
+          confirmButtonText: 'Add',
           inputValidator: (value) => {
               return !value && 'You need to write something!'
           }
@@ -171,7 +171,7 @@ $(window).on('load', function() {
       },
       showCancelButton: true,
       confirmButtonColor: '#00ebad',
-      confirmButtonText: 'Ajouter',
+      confirmButtonText: 'Add',
       inputValidator: (value) => {
         return !value && 'You need to write something!'
       }
@@ -203,7 +203,7 @@ $(window).on('load', function() {
       },
       showCancelButton: true,
       confirmButtonColor: '#00ebad',
-      confirmButtonText: 'Ajouter',
+      confirmButtonText: 'Add',
       inputValidator: (value) => {
         return !value && 'You need to write something!'
       }
@@ -235,7 +235,7 @@ $(window).on('load', function() {
       },
       showCancelButton: true,
       confirmButtonColor: '#00ebad',
-      confirmButtonText: 'Ajouter',
+      confirmButtonText: 'Add',
       inputValidator: (value) => {
         return !value && 'You need to write something!'
       }
@@ -267,7 +267,7 @@ $(window).on('load', function() {
           },
           showCancelButton: true,
           confirmButtonColor: '#00ebad',
-          confirmButtonText: 'Ajouter',
+          confirmButtonText: 'Add',
           inputValidator: (value) => {
               return !value && 'You need to write something!'
           }
@@ -299,7 +299,7 @@ $(window).on('load', function() {
           },
           showCancelButton: true,
           confirmButtonColor: '#00ebad',
-          confirmButtonText: 'Ajouter',
+          confirmButtonText: 'Add',
           inputValidator: (value) => {
               return !value && 'You need to write something!'
           }
@@ -331,7 +331,7 @@ $(window).on('load', function() {
       },
       showCancelButton: true,
       confirmButtonColor: '#00ebad',
-      confirmButtonText: 'Ajouter',
+      confirmButtonText: 'Add',
       inputValidator: (value) => {
         return !value && 'You need to write something!'
       }
