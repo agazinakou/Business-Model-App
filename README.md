@@ -7,7 +7,10 @@
 
 ## Why ?
 
-It's cool and fun.
+A picture is worth a thousand words. BMC is visual!
+
+The BMC will allow you to identify your project at a glance. Its structure, composed of 9 blocks, provides an overall vision that is lacking when writing a business plan. To understand, create your business model canvas here.
+
 
 
 ## Features
@@ -30,9 +33,8 @@ You must be sure to have the following elements installed on your machine.
 - XML PHP Extension
 - JSON PHP Extension
 
+## Getting Help
 
-## Contact me 
-
-If you need technical support or have any questions, please send a message to [agazinakou@gmail.com](mailto:agazinakou@gmail.com) or via skype: aziiin5.
+If you have any questions or feedback, please send a message to [agazinakou@gmail.com](mailto:agazinakou@gmail.com) or via skype: aziiin5.
 
 **Don't re-invent the wheel, Just re-align It.**
