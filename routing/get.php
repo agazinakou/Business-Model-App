@@ -4,26 +4,24 @@ $app->route([
 	'path' => '/',
 	'method' => 'GET',
 	'handler' => function () {
-		//return response()->render('welcome');
-		return view('welcome');
+		return response()->render('components/welcome');
+	}
+]);
+
+
+$app->route([
+	'path' => '/sign-in',
+	'method' => 'GET',
+	'handler' => function () {
+		return response()->render('components/auth/login');
 	}
 ]);
 
 $app->route([
-	'path' => '/signin',
+	'path' => '/sign-up',
 	'method' => 'GET',
 	'handler' => function () {
-		//return response()->render('welcome');
-		return view('auth.signin');
-	}
-]);
-
-$app->route([
-	'path' => '/signup',
-	'method' => 'GET',
-	'handler' => function () {
-		//return response()->render('welcome');
-		return view('auth.signup');
+		return response()->render('components/auth/signup');
 	}
 ]);
 

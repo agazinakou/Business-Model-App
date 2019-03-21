@@ -5,6 +5,13 @@ node_modules
 db/migration/.registers
 vendor/
 package-lock.json
+public
 !.gitkeep
+!public/**/.gitkeep
+!public/index.php
+!public/robots.txt
+!public/.htaccess
+!public/favicon.ico
 .env.json
-.mixfile-version.json
+config/.key
+mix-manifest.json

@@ -1,31 +1,22 @@
-<img src="public/img/logo.png" height="100" />
+<img src="https://raw.githubusercontent.com/bowphp/arts/master/bow.jpg" width="100">
 
-## Business Model Canvas App
+## Bow Framework
 
-<img src="public/img/2.png" height="600" />
+<a href="https://bowphp.github.io" title="docs"><img src="https://img.shields.io/badge/docs-read%20docs-blue.svg?style=flat-square"/></a>
+<a href="https://packagist.org/packages/bowphp/app" title="version"><img src="https://img.shields.io/packagist/v/bowphp/app.svg?style=flat-square"/></a>
+<a href="https://github.com/bowphp/app/blob/master/LICENSE" title="license"><img src="https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square"/></a>
+<a href="https://travis-ci.org/bowphp/app" title="Travis branch"><img src="https://img.shields.io/travis/bowphp/app/master.svg?style=flat-square"/></a>
 
+Bow est un Framework PHP, écrit par **[Franck DAKIA](http://github.com/papac)** et plusieurs autre contributeurs.
 
-## Why ?
+Le but c'est de permettre aux débutants qui veulent travailler sur un projet un peu plus grand de s'y lancer, afin de comprendre les rouages du **développement collaboratif**. Et faire de ce framework une référence dans la communauté PHP dans le monde.
 
-A picture is worth a thousand words. BMC is visual!
+**N'hésitez pas à commencez maintenant avec la [documentation](https://bowphp.github.io).**
 
-The BMC will allow you to identify your project at a glance. Its structure, composed of 9 blocks, provides an overall vision that is lacking when writing a business plan. To understand, create your business model canvas here.
+## Prérequis
 
+Vous devez vous assurer les différents éléments suivants sont installés sur votre machine.
 
-
-## Features
-1. Add/Edit/Remove element
-2. Drag & Drop
-3. Print easily
-4. Login for save
-5. Tooltip
-6. ...
-
-## Requirement
-
-You must be sure to have the following elements installed on your machine.
-
-- [Bow Framework](https://bowphp.github.io) by [@franck_dakia](https://twitter.com/franck_dakia)
 - PHP >= 7
 - OpenSSL PHP Extension
 - PDO PHP Extension
@@ -33,8 +24,10 @@ You must be sure to have the following elements installed on your machine.
 - XML PHP Extension
 - JSON PHP Extension
 
-## Getting Help
+## Auteur
 
-If you have any questions or feedback, please send a message to [agazinakou@gmail.com](mailto:agazinakou@gmail.com) or via skype: aziiin5.
+**Franck DAKIA** est un développeur Full Stack basé actuellement en Afrique, Côte d'ivoire. Passionné de code, et développement collaboratif, Speaker, Formateur et Membre de plusieurs communautés de développeurs.
 
-**Don't re-invent the wheel, Just re-align It.**
+Contact: [dakiafranck@gmail.com](mailto:dakiafranck@gmail.com) - [@franck_dakia](https://twitter.com/franck_dakia)
+
+**SVP s'il y a un bogue sur le projet veuillez me contacter par email ou laissez moi un message sur le [slack](https://bowphp.slack.com).**

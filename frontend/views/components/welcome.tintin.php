@@ -1,8 +1,16 @@
-{% extends "layouts/master.twig" %}
+#extends('layouts.master')
+
+#block('title', 'The Business Model Canvas')
+
+#block('style')
+    
+#endblock
 
 
-{% block content %}
-    <div class="container">
+#block('content')
+
+<section class="pt-10">
+<div class="container">
       <h3 class="m-0">The Business Model Canvas</h3>
       <!-- Canvas -->
       <table id="bizcanvas" cellspacing="0" border="1">
@@ -63,4 +71,10 @@
       </table>
       <!-- /Canvas -->
     </div>
-{% endblock %}
+</section>
+
+#endblock
+
+#block('script')
+
+#endblock

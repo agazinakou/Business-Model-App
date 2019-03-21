@@ -1,14 +1,8 @@
 <?php
-/**
- * Configuration du service de mail
- *
- * On retourne la configuration
- * que l'application utilisera pour
- * Gérer l'envoi de mail.
- */
+
 return [
     /**
-     * Le type de service utiliser pour l'envoi de mail
+     * Le type de service utiliser pour l'envoye de mail
      * supporté: mail, smtp
      * Si smtp est définie alors les clés password et username doivent avoir des values.
      */

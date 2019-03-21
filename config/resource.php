@@ -1,10 +1,10 @@
 <?php
 /**
- * Fichier de configuration de la classe ressource
+ * Fichier de configuration de la classe réssource
  */
 return [
     /**
-     * Store location utilisant le système de disk
+     * Store location utilisant le systeme de disk
      */
     'disk' =>[
         'mount' => 'storage',

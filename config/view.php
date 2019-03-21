@@ -4,10 +4,10 @@ return [
     /**
      * Le repertoire des vues. C'est dans ce repertoire que
      * vous allez mettre tous vos vues.
-     * Les vues doivent avoir l' instantion que vous avez définir
+     * Les vues doivent avoir l'instantion que vous avez définir
      * dans 'template_extension' si non erreur sera lancé
      */
-    'path' => __DIR__ . '/../components/views',
+    'path' => __DIR__ . '/../frontend/views',
 
     /**
      * chemin du fichier 404
@@ -19,19 +19,19 @@ return [
     /**
      * Le moteur de rendu des vues.
      *
-     * Template par défaut utiliser par Bow.
+     * Template par defaut utiliser par Bow.
      * Le système implement 4 moteur de template.
      *
      * Valeur possible (supported): twig, mustache, pug, php
      * - Le nom du package mustache: mustache/mustache
      * - Le nom du package pug: pug-php/pug
      */
-    'engine' => 'twig',
+    'engine' => 'tintin',
 
     /**
      * Extension des pages de vues
      */
-    'extension' => '.twig',
+    'extension' => '.tintin.php',
 
     /**
      * Le repertoire de cache.
