@@ -1,5 +1,23 @@
 <?php
 
+use Bow\Translate\Translator;
+
+$app->middleware(['language']);
+
+$app->route([
+	'path' => '/lng',
+	'method' => 'GET',
+	'handler' => function () {
+		return Translator::getLocale();
+	}
+]);
+
+$app->route([
+	'path' => '/switch',
+	'method' => 'GET',
+	'handler' => 'LanguageController::switch',
+]);
+
 $app->route([
 	'path' => '/',
 	'method' => 'GET',

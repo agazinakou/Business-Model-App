@@ -23,18 +23,27 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-lg-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/">Home
+                        <a class="nav-link" href="/">
+                            {{ t('app.nav.home') }}
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" onclick="comingSoon()">Show more</a>
+                        <a class="nav-link" onclick="comingSoon()">{{ t('app.nav.show_more') }}</a>
                     </li>
                 </ul>
                 <div class="custom-menu__right">
-                    <a href="sign-in" type="button" class="btn btn-warning btn-pills">Login for save</a>
-                    <button class="btn btn-primary btn-pills" id="print">Print <i class="fas fa-print"></i></button>
+                    <a href="sign-in" type="button" class="btn btn-warning btn-pills">{{ t('app.nav.login_for_save') }}</a>
+                    <button class="btn btn-primary btn-pills" id="print">{{ t('app.nav.print') }} <i class="fas fa-print"></i></button>
                     <p class="assistive-text d-md-none">Free forever</p>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" id="language">
+                        <img src="img/flags/fr.svg" width="40" alt="French flag"> French
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="btn btn-light" type="button" id="switch"><img src="img/flags/uk.svg" width="40" alt="United Kingdom flag"> English        </a>              
+                    </div>
                 </div>
             </div>
         </div>

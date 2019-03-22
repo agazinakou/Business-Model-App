@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
@@ -15,6 +15,7 @@
 
     <!-- Inject additional stylesheet if exist -->
     #inject('style')
+    
     <!-- Nav -->
     #include('layouts/partials/nav')
 
@@ -29,5 +30,6 @@
 
     <!-- Inject additional script if exist -->
     #inject('script')
+    
 </body>
 </html>

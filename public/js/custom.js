@@ -4,6 +4,30 @@ $(window).on('load', function() {
   $('#loading').addClass('hidden');
 });
 
+$(document).ready(function () {
+
+
+  $.get( "lng" )
+  .done(function( data ) {
+      if(data == 'fr'){
+          document.getElementById('language').innerHTML = "<img src='img/flags/fr.svg' width='30px' alt='Français'> &nbsp; Français";
+          document.getElementById('switch').innerHTML = "<img src='img/flags/uk.svg' width='30px' alt='Français' id='change'> &nbsp; English";
+      } else {
+          document.getElementById('language').innerHTML = "<img src='img/flags/uk.svg' width='30px' alt='Français'> &nbsp; English";
+          document.getElementById('switch').innerHTML = "<img src='img/flags/fr.svg' width='30px' alt='Français' id='change'> &nbsp; French";
+      }
+      //location.reload(true);
+  });
+
+  $( "#switch" ).click(function() {
+      $.get( "switch" )
+      .done(function( data ) {
+          location.reload(true);
+      });
+  });
+});
+
+
 (function($) {
   'use strict';
   var keyActivitiesArr = [];
@@ -388,5 +412,4 @@ function keyActivities(a){
   })
 
 }
-
 

@@ -32,7 +32,8 @@ class Kernel extends ApplicationLoader
         return [
             'csrf' => \App\Middleware\ClientCsrfMiddleware::class,
             'auth' => \App\Middleware\Authenticate::class,
-            'guest' => \App\Middleware\Guest::class
+            'guest' => \App\Middleware\Guest::class,
+            'language' => \App\Middleware\LanguageMiddleware::class
         ];
     }
 

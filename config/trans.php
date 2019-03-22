@@ -10,7 +10,7 @@ return [
      * Quand la valeur est à `true`, le système de traduction
      * détectera la langue du client et fera traduction en fonction
      */
-    'auto_detected' => false,
+    'auto_detected' => true,
 
     /**
      * Chemin vers le répètoire des langues
