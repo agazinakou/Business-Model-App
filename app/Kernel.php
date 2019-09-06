@@ -3,6 +3,7 @@
 namespace App;
 
 use Bow\Configuration\Loader as ApplicationLoader;
+use Illuminate\Support\Facades\Schema;
 
 class Kernel extends ApplicationLoader
 {
